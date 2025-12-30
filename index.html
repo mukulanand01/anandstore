@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Practice Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <!-- Image for logo -->
+                <img src="images/logo-white1.png" width="125px" alt="Logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('products')">Products</a></li>
+                    <li><a href="#" onclick="showSection('about')">About</a></li>
+                     <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                     <li><a href="#" onclick="showSection('account')">Account</a></li>
+                    
+                </ul>
+            </nav>
+            <input type="text" id="searchBar" placeholder="Search products..." style="padding:5px; border-radius:5px;">
+
+            <img id="cart-icon" src="images/cart.png" alt="Cart Icon" class="menu-icon" width="30px" height="30px" >
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <h1>Give Your Workout<br> A New Style!</h1>
+                <p>Success isn't always about greatness. It's about consistency.<br> Consistent hard work leads to success. Greatness will come.</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <!-- Image for workout or product -->
+                <!-- <img src="images/image1.png" alt="Workout Image" width="auto"> -->
+                 <img src="images/image1.png" alt="Workout Image" width="300">
+
+            </div>
+        </div>
+    </div>
+</div>
+  <!------ featured categories ------>
+  <div class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/category-1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-3.jpg">
+            </div>
+    </div>
+    
+
+    </div>
+  </div>
+  <!---featured products-->
+  <div class="container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4 product-card">
+            <img src="images/product-1.jpg" >
+            <h4> Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-2.jpg" >
+            <h4> Shoes</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-3.jpg" >
+            <h4> Jeans</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-4.jpg" >
+            <h4> Blue  T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-4.jpg" >
+            <h4> Blue  T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-4.jpg" >
+            <h4> Blue  T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+</div>
+<h2 class="title">Latest Product</h2>
+<div class="row">
+    <div class="col-4 product-card">
+        <img src="images/product-5.jpg" >
+        <h4> Grey Shoe's </h4>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i> <!-- Empty Star -->
+        </div>
+        <p>₹250.00</p>
+
+        <button class="add-to-cart">Add to Cart</button>
+
+    </div>
+    <div class="col-4 product-card">
+        <img src="images/product-6.jpg" >
+        <h4> Black T-Shirt</h4>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i> <!-- Empty Star -->
+        </div>
+        
+        <p>₹250.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="col-4 product-card">
+        <img src="images/product-7.jpg" >
+        <h4> Shocks</h4>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i> <!-- Empty Star -->
+        </div>
+        
+        <p>₹250.90</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="col-4 product-card">
+        <img src="images/product-8.jpg" >
+        <h4> Black Watch</h4>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <!-- Empty Star -->
+        </div>
+        
+        <p>₹250.00</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="col-4 product-card">
+        <img src="images/product-7.jpg" >
+        <h4> Shocks</h4>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i> <!-- Empty Star -->
+        </div>
+        
+        <p>₹250.90</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="col-4 product-card">
+        <img src="images/product-7.jpg" >
+        <h4> Shocks</h4>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i> <!-- Empty Star -->
+        </div>
+        
+        <p>₹250.90</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="row">
+        <div class="col-4 product-card">
+            <img src="images/product-9.jpg" >
+            <h4> Watch(Kids)</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-10.jpg" >
+            <h4> Shoes</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-11.jpg" >
+            <h4> Shoes</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-12.jpg" >
+            <h4>Lower </h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-12.jpg" >
+            <h4>Lower </h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+            <p>₹250.00</p>
+        </div>
+        <div class="col-4 product-card">
+            <img src="images/product-12.jpg" >
+            <h4>Lower </h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> <!-- Empty Star -->
+            </div>
+            
+            <p>₹250.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+  </div>
+  
+</div>
+
+  <!----Offer--->
+  <div class="offer">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>Smart Band 4</h1>
+                <small>The mi Smart band 4 Features a 39.9% larger (than Mi Band 3 ) Amoled Color full-touch display with adjustable brightness is clear as canb be.</small>
+                <a href="" class="btn">Buy Now &#8594</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  <!----Testimonial-->
+  <div class="testimonial">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>I have been using a Mi Band 4 And Honor band 3 already. So this is like an upgrade for me. Here is my review based on first few days usage. Will update the review again after a months usage to include other things like battery backup.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> <!-- Empty Star -->
+                </div>
+                <img src="images/user-1.png">
+                <h3>Anamika Raj</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>I've been using this for 4 years. Its very good for wearing . Thank You RedStore</p> <!-- Move this outside rating -->
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> <!-- Empty Star -->
+                </div>
+                <img src="images/user-2.png">
+                <h3>Anand Raj</h3>
+            </div>
+            
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <div class="rating">
+                    <p>I'm writing this review after 2.5 years of usage. Minimum usage and the battery lasts for 2 weeks. Accurate step tracker and is value for money. I purchased the watch for Rs. 1700/- in 2022</p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> <!-- Empty Star -->
+                </div>
+                <img src="images/user-3.png">
+                <h3>Khushi Raj</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!--brands-->
+  <div class="brands">
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+  </div>
+  <!---footer-->>
+        <p class="Copyright">Copyright@MukulAnand</p>
+    </div>
+  </div>
+  <p id="currentTime"></p>
+<!-- Cart Panel -->
+    
+<div id="cart-panel" style="display:none; position:fixed; top:0; right:0; width:300px; height:100%; background:white; box-shadow:-2px 0 5px rgba(0,0,0,0.3); padding:15px; overflow:auto; z-index:9999;">
+    <button id="closeCart" class="close-btn">×</button>
+    <h2>Your Cart</h2>
+  
+    <!-- Cart items will be added here -->
+    <div id="cart-items"></div>
+  
+    <hr>
+  
+    <!-- Total price display -->
+    <div id="cart-total" style="margin-top: 10px; font-weight: bold;">Total: ₹0.00</div>
+  </div>  
+  <!--JavaScript Code-->
+  <script src="script2.js"></script>
+</div>
+</body>
+</html>
+
+
+  
